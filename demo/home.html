@@ -12,5 +12,16 @@
 <body>
     <button onclick="dr.change('page1.html', document)">Page 1</button>
     <button onclick="dr.change('page2.html', document)">Page 2</button>
+    <br>
+    <h1 id="scriptexample"></h1>
+
+    <script src="../ddomr.global.js"></script>
+
+    <script class="ddomr-script">
+        scriptexample.innerHTML = "This text was inserted with JavaScript on this page: home";
+    </script>
+
+    <script class="ddomr-script" src="js/home.js"></script>
+
 </body>
 </html>

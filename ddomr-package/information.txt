@@ -1,0 +1,5 @@
+These are the official minified files for DDOMR (Dynamic DOM Renderer)
+
+Feel free to use these in your commercial and non-commercial projects, free of cost or attribution. 
+
+Enjoy!

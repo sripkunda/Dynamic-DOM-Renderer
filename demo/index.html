@@ -7,10 +7,11 @@
 </head>
 <body>
     
-    <script src="../ddomr.js"></script>
+    <script src="../ddomr.root.js"></script>
+    <script src="../ddomr.global.js"></script>
 
     <script>
-        var dr = new DomRenderer();
+        var dr = ddomr_instance; 
         dr.init("home.html", document);
     </script>
 </body>
