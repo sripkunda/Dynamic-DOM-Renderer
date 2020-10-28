@@ -32,6 +32,20 @@
  To cycle between pages, add an onclick/href to your links/buttons that calls the following function: 
 
     dr.change("path/to/file/", document) // ALWAYS pass *document* as the second parameter
+    
+# Adding Javascript
+
+All JavaScript must be included after *ddomr.global.min.js*. JavaScript that should be executed by DDOMR must have the *ddomr-script* classname. 
+
+Do not include any other JS files in the root file. 
+
+**Example Script (will be executed by DDOMR): **
+
+    <script src="myscript.js" class="ddomr-script"></script>
+    
+**Example Script (will NOT be executed by DDOMR): **
+
+    <script src="myscript.js"></script>
 
 Example of navigation to *mypage.html*
 
