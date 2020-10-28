@@ -8,7 +8,17 @@
 
  In every page, add *ddomr.global.min.js* and add *ddomr.root.min.js* for your root file (index.html). 
 
- **Any additional scripts must be put AFTER the DDOMR script(s)**
+ **Any additional scripts must be put AFTER the DDOMR script(s
+ 
+ # CDN
+
+**Root File**
+
+    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.root.min.js"></script>
+
+**Global File**
+
+    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
 
 # Usage
 
@@ -31,12 +41,4 @@ Example of navigation to *mypage.html*
 
 This project was created by the Feedbump Founder and CEO, Sri. You can find Feedbump at https://feedbump.app.
 
-# CDN
 
-**Root File**
-
-    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.root.min.js"></script>
-
-**Global File**
-
-    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
