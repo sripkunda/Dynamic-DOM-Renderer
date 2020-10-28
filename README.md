@@ -1,5 +1,5 @@
 # Dynamic DOM Renderer (DDOMR)
- A javascript library for dynamically rendering HTML pages without a reload.
+ An open source javascript library for creating single-page web apps in plain HTML, CSS, and JavaScript.
 
 # Setup and Installation
  Download the .zip source from the github page for this project, and find the minified files located in the folder named "ddomr-package" . Copy these files into your desired folder.
