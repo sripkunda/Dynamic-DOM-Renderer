@@ -6,7 +6,7 @@ class ddomr {
         // Check for existing path (overrides path variable)
 
         let params = new URLSearchParams(document.location.search.substring(1));
-        let routing = params.get("routing"); // is the string "Jonathan"
+        let routing = params.get("routing"); 
     
         if (routing)
         {
