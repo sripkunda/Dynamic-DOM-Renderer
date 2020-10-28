@@ -25,4 +25,14 @@
 
 # Feedbump / Additional Info
 
-This project was created by the Feedbump team. You can find us at https://feedbump.app.
+This project was created by the Feedbump Founder and CEO, Sri. You can find Feedbump at https://feedbump.app.
+
+# CDN
+
+**Root File**
+
+    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.root.min.js"></script>
+
+**Global File**
+
+    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
