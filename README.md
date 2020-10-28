@@ -23,6 +23,10 @@
 
     dr.change("path/to/file/", document) // ALWAYS pass *document* as the second parameter
 
+Example of navigation to *mypage.html*
+
+    <a href="javascript:dr.change('mypage.html', document)">Click Me</a>
+
 # Feedbump / Additional Info
 
 This project was created by the Feedbump Founder and CEO, Sri. You can find Feedbump at https://feedbump.app.
