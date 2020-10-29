@@ -53,6 +53,6 @@ Example of navigation to *mypage.html*
 
 # Feedbump / Additional Info
 
-This project was created by the Feedbump Founder and CEO, Sri. You can find Feedbump at https://feedbump.app.
+This project was created by the Sri from the Feedbump Team. You can find Feedbump at https://feedbump.app.
 
 
