@@ -33,6 +33,10 @@
 
     <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
 
+**Template File**
+
+    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.template.min.js"></script>
+
 # Basic Usage
 
  In your root file (index.html), add the following script:
