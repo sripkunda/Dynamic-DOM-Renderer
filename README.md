@@ -16,7 +16,7 @@
 
  In every page, add *ddomr.global.min.js* and add *ddomr.root.min.js* for your root file (index.html).
 
- **Any additional scripts must be put AFTER the DDOMR script(s
+ **Any additional scripts must be put AFTER the DDOMR script(s)**
  
 # Running the DDOMR Demo locally
  After downloading the full source, open the full demo filesystem in a **local server**. The JavaScript *fetch()* method requires that the demo is run through a http or https connection. 
