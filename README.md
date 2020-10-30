@@ -58,7 +58,7 @@
 ## Creating Templates
  Templates can be kept anywhere in your filesystem. 
  
- Templates must start with the *<template>* element and must have the *ddomr.template.min.js* script at the end of the file. 
+ Templates must start with the <template> element and must have the *ddomr.template.min.js* script at the end of the file. 
 
  Example code: 
 
@@ -71,7 +71,7 @@
     <script src="../../path/to/ddomr.template.min.js"></script>
 
 ## Using Templates
- Using templates in your HTML code is done with the *<ddomr-template>* element. The *template-src=* controls the path to the template resource file. Templates can be used in any part of the HTML, but they work best when used in the HTML body. 
+ Using templates in your HTML code is done with the <ddomr-template> element. The *template-src=* controls the path to the template resource file. Templates can be used in any part of the HTML, but they work best when used in the HTML body. 
 
  Example: 
 
