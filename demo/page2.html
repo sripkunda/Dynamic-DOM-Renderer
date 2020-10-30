@@ -7,6 +7,8 @@
 
     <link rel="shortcut icon" href="assets/page2.png" />
     <link rel="stylesheet" href="css/page2.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    
 </head>
 <body>
     <button onclick="dr.change('home.html', document)">Home</button>
@@ -14,7 +16,9 @@
     <br>
     <h1 id="scriptexample"></h1>
     
-    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
+    <ddomr-template template-src="./templates/footer.template.html"></ddomr-template>
+
+    <script src="../ddomr.global.js"></script>
 
     <script class="ddomr-script">
         scriptexample.innerHTML = "This text was inserted with JavaScript on this page: page2";

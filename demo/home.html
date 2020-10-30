@@ -7,6 +7,7 @@
 
     <link rel="shortcut icon" href="assets/home.png" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/global.css" />
 
 </head>
 <body>
@@ -14,9 +15,12 @@
     <button onclick="dr.change('page2.html', document)">Page 2</button>
     <button onclick="dr.change('urlparams.html?myParam=This is a param!', document)">URL Params Example</button>
     <br>
+
     <h1 id="scriptexample"></h1>
 
-    <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
+    <ddomr-template template-src="./templates/footer.template.html"></ddomr-template>
+
+    <script src="../ddomr.global.js"></script>
 
     <script class="ddomr-script">
         scriptexample.innerHTML = "This text was inserted with JavaScript on this page: home";
