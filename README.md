@@ -97,8 +97,3 @@ Example of navigation to *mypage.html*
 
 
 
-# Feedbump / Additional Info
-
-This project was created by Sri from the Feedbump Team. You can find Feedbump at https://feedbump.app.
-
-
