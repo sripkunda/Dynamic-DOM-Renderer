@@ -2,7 +2,7 @@
  An open source javascript library for creating single-page web apps in plain HTML, CSS, and JavaScript.
 
 # Introduction
- Dynamic DOM Renderer (DDOMR) is a lightweight JavaScript library for template-based web development in HTML, CSS, and JavaScript. The goal is to eliminate the time spent to implement the functionality of a SPA (Single Page Application) in plain JavaScript.
+ Dynamic DOM Renderer (DDOMR) is a lightweight JavaScript library for template-based web development in HTML, CSS, and JavaScript. The goal is to implement the functionality of a SPA (Single Page Application) in plain JavaScript.
  
 # Demo
  View a demo of DDOMR's functionality at https://srikoala.github.io/Dynamic-DOM-Renderer
