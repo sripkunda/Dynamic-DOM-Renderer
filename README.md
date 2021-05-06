@@ -2,12 +2,15 @@
  An open source javascript library for creating single-page web apps in plain HTML, CSS, and JavaScript.
 
 # Introduction
- Dynamic DOM Renderer (DDOMR) is a lightweight JavaScript library for template-based web development in HTML, CSS, and JavaScript. The goal is to eliminate the time spent to learn a framework such as Angular, React, or Vue. DDOMR provides a lightweight version of the basic functionality of these frameworks with an easy-to-use interface. 
+ Dynamic DOM Renderer (DDOMR) is a lightweight JavaScript library for template-based web development in HTML, CSS, and JavaScript. The goal is to eliminate the time spent to implement the functionality of a SPA (Single Page Application) in plain JavaScript.
+ 
+# Demo
+ View a demo of DDOMR's functionality at https://srikoala.github.io/Dynamic-DOM-Renderer
+
 
 # Features
  * Single-page web application
  * Template-based development - Reusable components can be stored in templates.
- * Lightweight - DDOMR is great for performance and is very lightweight.
 
 # Setup and Installation
  Download the .zip source from the github page for this project, and find the minified files located in the folder named "ddomr-package" . Copy these files into your desired folder.
@@ -16,24 +19,19 @@
 
  In every page, add *ddomr.global.min.js* and add *ddomr.root.min.js* for your root file (index.html).
 
- **Any additional scripts must be put AFTER the DDOMR script(s)**
+ **Any additional javascript in your files must be put AFTER the DDOMR script(s)**
  
-# Running the DDOMR Demo locally
- After downloading the full source, open the full demo filesystem in a **local server**. The JavaScript *fetch()* method requires that the demo is run through a http or https connection. 
-
- Tested using [Visual Studio Code](https://code.visualstudio.com/) and the [Live Server Plugin](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) by Ritwik Dey. 
-
  # CDN
 
-**Root File**
+**Root JavaScript File (ddomr.root.min.js)**
 
     <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.root.min.js"></script>
 
-**Global File**
+**Global JavaScript File (ddomr.global.min.js)**
 
     <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.global.min.js"></script>
 
-**Template File**
+**Template JavaScript File (ddomr.template.min.js)**
 
     <script src="https://cdn.jsdelivr.net/gh/SriKoala/Dynamic-DOM-Renderer/ddomr-package/ddomr.template.min.js"></script>
 
@@ -53,7 +51,7 @@
 # Templates 
 
 ## About Templates
- Templates are a form of reusable code. Templates can be modified in one place for use in multiple areas. The concept promotes code reusability and can save development time and resutls in cleaner code. 
+ Templates are a form of reusable code. Templates can be modified in one place for use in multiple areas. The concept promotes code reusability, can save development time, and results in cleaner code. 
 
 ## Creating Templates
  Templates can be kept anywhere in your filesystem. 
