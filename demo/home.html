@@ -11,22 +11,17 @@
 
 </head>
 <body>
-    <button onclick="dr.change('page1.html', document)">Page 1</button>
-    <button onclick="dr.change('page2.html', document)">Page 2</button>
-    <button onclick="dr.change('urlparams.html?myParam=This is a param!', document)">URL Params Example</button>
-    <br>
-
-    <h1 id="scriptexample"></h1>
-
+    <ddomr-template template-src="./templates/jumbotron.template.html"></ddomr-template>
     <ddomr-template template-src="./templates/footer.template.html"></ddomr-template>
 
+    <!-- DDOMR script ALWAYS comes first-->
     <script src="../ddomr.global.js"></script>
-
+    
+    <!-- All of your additional JavaScript afterwards -->
+    
     <script class="ddomr-script">
-        scriptexample.innerHTML = "This text was inserted with JavaScript on this page: home";
+        document.getElementById('title').innerHTML = "DDOMR Home"
     </script>
-
-    <script class="ddomr-script" src="js/home.js"></script>
 
 </body>
 </html>

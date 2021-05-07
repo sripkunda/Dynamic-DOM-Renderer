@@ -1,6 +1,20 @@
 if ((typeof ddomr) == "undefined")  
 {
-    window.location = "index.html?routing=" + getCurrentFile() + ".html";
+    // Read URL parameters if any
+
+    let params = new URLSearchParams(document.location.search.substring(1));
+    let paramsText = "";
+    let pArr = Array.from(params); 
+
+    if (pArr.length > 0)
+    {
+        paramsText = "?"
+        pArr.forEach(p => {
+            paramsText += p[0] + "=" + p[1] + "&";
+        });
+    }
+
+    window.location = "index.html?routing=" + getCurrentFile() + ".html" + paramsText;
 } else {
     var ddomr_instance = new ddomr();
 }

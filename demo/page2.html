@@ -11,19 +11,13 @@
     
 </head>
 <body>
-    <button onclick="dr.change('home.html', document)">Home</button>
-    <button onclick="dr.change('page1.html', document)">Page 1</button>
-    <br>
-    <h1 id="scriptexample"></h1>
-    
+    <ddomr-template template-src="./templates/jumbotron.template.html"></ddomr-template>
     <ddomr-template template-src="./templates/footer.template.html"></ddomr-template>
-
+    
     <script src="../ddomr.global.js"></script>
 
     <script class="ddomr-script">
-        scriptexample.innerHTML = "This text was inserted with JavaScript on this page: page2";
+        title.innerHTML = "Page 2";
     </script>
-
-    <script class="ddomr-script" src="js/page2.js"></script>
 </body>
 </html>

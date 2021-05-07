@@ -1,7 +1,9 @@
 class ddomr {
 
-    async init(path, doc) 
+    async init(path) 
     {
+
+        var doc = document; 
 
         // Check for existing path (overrides path variable)
 
@@ -20,45 +22,49 @@ class ddomr {
 
         // Read and insert templates
 
+        var ctr = 1; 
+
         Array.from(doc.querySelectorAll("ddomr-template")).forEach(async function(el) {
-           new ddomr().loadFromTemplate(el.getAttribute("template-src"), doc, el);
+            ctr++;
+            new ddomr().loadFromTemplate(el.getAttribute("template-src"), doc, el).then(() => {
+                if (ctr === doc.querySelectorAll("ddomr-template").length)
+                {
+                    new ddomr().jsreload(doc);
+                }
+            });
         });
 
-        // Execute Javascript
-
-        Array.from(doc.querySelectorAll('script.ddomr-script')).forEach(async function(element) {
-            if (element.hasAttribute("src"))
-            {
-                eval(await (await fetch(element.src)).text());
-            } else {
-                eval(element.innerHTML);
-            }
+        // Enable history back
+        
+        window.addEventListener("popstate", (e) => {
+            this.change(document.location.href ,document)
         });
 
     }
 
-    async change(path, doc) 
+    async change(path) 
     {
+        var doc = document; 
+
         const html = (await (await fetch(path)).text()); // html as text
         window.history.pushState({"html":html},"", path);
         doc.querySelector('html').innerHTML = html;
 
         // Read and insert templates
 
+        var ctr = 1; 
+
         Array.from(doc.querySelectorAll("ddomr-template")).forEach(async function(el) {
-            new ddomr().loadFromTemplate(el.getAttribute("template-src"), doc, el);
+            ctr++;
+            new ddomr().loadFromTemplate(el.getAttribute("template-src"), doc, el).then(() => {
+                if (ctr === doc.querySelectorAll("ddomr-template").length)
+                {
+                    new ddomr().jsreload(doc);
+                }
+            });
         });
 
-        // Execute Javascript
 
-        Array.from(doc.querySelectorAll('script.ddomr-script')).forEach(async function(element) {
-            if (element.hasAttribute("src"))
-            {
-                eval(await (await fetch(element.src)).text());
-            } else {
-                eval(element.innerHTML);
-            }
-        });
         
     }
 
@@ -93,8 +99,13 @@ class ddomr {
 
         // Read and insert templates inside of the templates
 
-        el.innerHTML = templateHTML;         
+        el.innerHTML = templateHTML;       
+        
+        Array.from(el.querySelectorAll("ddomr-template")).forEach(async function(e) {
+            new ddomr().loadFromTemplate(e.getAttribute("template-src"), el, e)
+        });
 
+        return el; 
     }
 
 }

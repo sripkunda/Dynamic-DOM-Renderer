@@ -3,7 +3,7 @@ let myParam = params.get("myParam");
 
 if (!myParam)
 {
-    scriptexample.innerHTML = "I couldn't read the param!!!";
+    title.innerHTML = "Something Went Wrong!";
 } else {
-    scriptexample.innerHTML = myParam;
+    title.innerHTML = myParam;
 }

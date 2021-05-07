@@ -41,12 +41,12 @@
 
     <script>
         var dr = ddomr_instance; // Optional, this just makes it look cleaner and gives you less to type later on. 
-        dr.init("home file name / path", document); // ALWAYS pass *document* as the second parameter 
+        dr.init("home file name / path");
     </script>
 
  To cycle between pages, add an onclick/href to your links/buttons that calls the following function: 
 
-    dr.change("path/to/file/", document) // ALWAYS pass *document* as the second parameter
+    dr.change("path/to/file/");
 
 # Templates 
 
@@ -91,7 +91,7 @@ Do not include any other JS files in the root file.
 
 Example of navigation to *mypage.html*
 
-    <a href="javascript:dr.change('mypage.html', document)">Click Me</a>
+    <a href="javascript:dr.change('mypage.html')">Click Me</a>
 
 
 
