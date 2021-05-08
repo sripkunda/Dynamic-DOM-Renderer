@@ -17,7 +17,8 @@ class ddomr {
 
         const html = (await (await fetch(path)).text()); // html as text
 
-        window.history.pushState({"html":html,"pageTitle":"DDOMR Page"}, "", path);
+        window.history.replaceState({"html":html,"pageTitle":"DDOMR Page"}, "", path);
+
         doc.querySelector('html').innerHTML = html;
 
         // Read and insert templates
@@ -37,7 +38,7 @@ class ddomr {
         // Enable history back
         
         window.addEventListener("popstate", (e) => {
-            this.change(document.location.href ,document)
+            window.location = '';
         });
 
     }
@@ -63,9 +64,6 @@ class ddomr {
                 }
             });
         });
-
-
-        
     }
 
     async jsreload(doc)
